@@ -4,7 +4,7 @@
     <?php require_once( 'header.php' ); ?>
     <div class="innercontain">
         <div id="menutitle" class="title">
-            Menu
+            Menu git was here
         </div>
         <div class="foodtitle">
             <span class="entreespan">Entrée</span>
