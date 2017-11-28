@@ -1,0 +1,499 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: "Lato","Helvetica neue",Arial, Helvetica, sans-serif;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url("http://www.freggie.ca/images/bg2.png");
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.nav {
+  color: #3D3D3D;
+  background: white;
+  background: rgba(255, 255, 255, 0.6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0 1px 10px #aaaaaa;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#logo {
+  padding: 20px;
+}
+
+#menubar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: white;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.stuck {
+  display: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+.menuitems {
+  width: 16%;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 8px;
+}
+
+.menuitems a {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+.menuitems:hover {
+  text-shadow: 0 0 3px #FF4537;
+}
+
+.innercontain {
+  text-align: center;
+  background-color: white;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-family: 'Bevan', cursive;
+  padding-top: 25px;
+}
+
+.foodtitle {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  color: #528c0f;
+  line-height: 0.1em;
+  border-bottom: 2px solid black;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.entreespan {
+  background-color: white;
+  padding: 10px;
+}
+
+.optionbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quickpicks {
+  font-size: 0.6em;
+  padding: 5px;
+}
+
+.quickpicks a {
+  color: black;
+  text-decoration: none;
+}
+
+.entreeitembox {
+  width: 80%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.entreepic {
+  padding: 5px;
+}
+
+.entreetext {
+  padding: 20px;
+  width: 80%;
+}
+
+.entreetexttitle {
+  font-size: 1em;
+}
+
+.entreetexttext {
+  font-size: 0.7em;
+  margin-top: 15px;
+}
+
+.entreeicons {
+  margin: 15px 0;
+  min-height: 40px;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.entreeimg {
+  width: 20%;
+}
+
+.entreehealthtext {
+  font-size: 0.6em;
+}
+
+.sidespic {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pics {
+  box-shadow: 3px 3px 3px #787878;
+  padding: 5px;
+  font-size: 0px;
+}
+
+.ordernow {
+  padding-bottom: 75px;
+  padding-top: 30px;
+}
+
+.button {
+  background: #E40000;
+  background: -moz-linear-gradient(top, #E40000 0%, #FF4537 60%, #B11111 100%);
+  background: -webkit-linear-gradient(top, #E40000 0%, #FF4537 60%, #B11111 100%);
+  background: linear-gradient(to bottom, #E40000 0%, #FF4537 60%, #B11111 100%);
+  padding: 15px 20px;
+  color: #000;
+  font-size: 1.4em;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  border: 1px solid black;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.46);
+  -moz-transform: translate(0px, -2px);
+  -webkit-transform: translate(0px, -2px);
+  -o-transform: translate(0px, -2px);
+  -ms-transform: translate(0px, -2px);
+  transform: translate(0px, -2px);
+}
+
+.button:active {
+  -moz-transform: translate(0px, 1px);
+  -webkit-transform: translate(0px, 1px);
+  -o-transform: translate(0px, 1px);
+  -ms-transform: translate(0px, 1px);
+  transform: translate(0px, 1px);
+}
+
+.arrowright {
+  padding-left: 10px;
+}
+
+#quotes {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.quote {
+  font-size: 0.8em;
+  width: 90%;
+  padding: 30px;
+  line-height: 2em;
+}
+
+.quotespan {
+  color: purple;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.quoteauthor {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+#ordertabbox {
+  width: 90%;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.ordertab {
+  width: 20%;
+  flex-grow: 1;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  background-color: #f0f0f0;
+  padding: 15px 40px;
+  font-size: 0.9em;
+  color: #929292;
+  cursor: pointer;
+  -webkit-transition: color 1s;
+  /* For Safari 3.1 to 6.0 */
+  transition: color 1s;
+}
+
+.ordertab:hover {
+  color: black;
+}
+
+.active {
+  color: black;
+  border-top: 2px solid purple;
+}
+
+.orderformbox {
+  border: 1px solid #dbdbdb;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("http://www.freggie.ca/images/orderbgtop.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.date {
+  text-align: center;
+  font-size: 0.9em;
+  color: #575757;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.reqinfo {
+  font-size: 0.5em;
+  padding-bottom: 10px;
+}
+
+.orderfield {
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.orderinput {
+  padding: 5px;
+}
+
+.orderentreebox {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.orderentreepic {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.orderentreetitle {
+  font-size: 0.7em;
+  color: #333333;
+}
+
+.muchmany {
+  display: flex;
+  justify-content: space-between;
+}
+
+.howmany {
+  padding: 10px;
+  width: 60%;
+}
+
+.howmanytext {
+  font-size: 0.6em;
+}
+
+.howmanysidetext {
+  font-size: 0.55em;
+}
+
+#howmanyinput {
+  width: 50px;
+}
+
+.howmuch {
+  padding: 10px;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.ordersidecont {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ordersidebox {
+  width: 50%;
+}
+
+#howmanysideinput {
+  width: 40px;
+}
+
+#specialorder {
+  margin-bottom: 20px;
+}
+
+.specialordertext {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.sml {
+  width: 50%;
+  height: 60px;
+  font-size: 0.8em;
+  margin-bottom: 30px;
+}
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#footmenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.footitem {
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.footitem a {
+  color: black;
+  text-decoration: none;
+}
+
+#ad {
+  font-size: 0.7em;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#ad a {
+  color: red;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  /* For tablets: */
+  .nav {
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #menubar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+  }
+  .innercontain {
+    text-align: center;
+    background-color: white;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+  }
+  .title {
+    font-size: 2.5em;
+    font-family: 'Bevan', cursive;
+    padding-top: 50px;
+  }
+  .entreespan {
+    background-color: white;
+    padding: 10px;
+  }
+  .quickpicks {
+    font-size: 0.8em;
+    padding: 10px;
+    margin: 15px 0px 30px;
+  }
+  .entreeitembox {
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .entreetext {
+    padding: 20px;
+    width: 70%;
+  }
+  .entreeicons {
+    margin: 15px 0;
+    min-height: 40px;
+  }
+  .entreehealthtext {
+    font-size: 0.8em;
+  }
+}
