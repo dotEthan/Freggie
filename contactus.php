@@ -2,7 +2,7 @@
     $title = "Freggie - Contact Us Today!";
 ?>
     <?php require_once( 'header.php' ); ?>
-
+    what?!
     <div class="innercontain">
         <!-- <div class="title">
             Contact Us
