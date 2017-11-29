@@ -1,2 +1,0 @@
-# Freggie
-Freggie Website Rebuild
