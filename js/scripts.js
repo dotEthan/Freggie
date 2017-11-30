@@ -59,3 +59,26 @@ $('.ordertab').click(function() {
 
 
 });
+
+
+document.getElementById('skype').addEventListener('mouseover', function fitb() {
+    document.getElementById('socialoutput').innerText = "freggiedelivery@outlook.com";
+})
+
+document.getElementById('email').addEventListener('mouseover', function fitb() {
+    document.getElementById('socialoutput').innerText = "ironchef@freggie.ca";
+})
+
+document.getElementById('facebook').addEventListener('mouseover', function fitb() {
+    document.getElementById('socialoutput').innerText = "http://www.facebook.com/freshfreggie";
+})
+
+// order tabs
+$('.faqquestion').click(function() {
+    console.log(this.id);
+    switch (this.id) {
+        case "1":
+            console.log(this.firstChild);
+            $('#1a').toggle();
+    }
+});
