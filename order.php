@@ -25,30 +25,30 @@
                     <div class="orderinput">
                         <input type="text" name="cusname" placeholder="First Last">
                     </div>
-                    <div class="orderinfoeach">
-                        <div class="orderfield">Your Email*</div>
-                        <div class="orderinput">
-                            <input type="email" name="cusemail" placeholder="email@domail.com">
-                        </div>
+                </div>
+                <div class="orderinfoeach">
+                    <div class="orderfield">Your Email*</div>
+                    <div class="orderinput">
+                        <input type="email" name="cusemail" placeholder="email@domail.com">
                     </div>
-                    <div class="orderinfoeach">
-                        <div class="orderfield">Your Phone Number*</div>
-                        <div class="orderinput">
-                            <input type="text" name="cusphone" placeholder="xxx-xxx-xxxx">
-                        </div>
+                </div>
+                <div class="orderinfoeach">
+                    <div class="orderfield">Your Phone Number*</div>
+                    <div class="orderinput">
+                        <input type="text" name="cusphone" placeholder="xxx-xxx-xxxx">
                     </div>
-                    <div class="orderinfoeach">
-                        <div class="orderfield">What time is Lunch?*</div>
-                        <div class="orderinput">
-                            <input type="text" placeholder="12:00pm">
-                        </div>
+                </div>
+                <div class="orderinfoeach">
+                    <div class="orderfield">What time is Lunch?*</div>
+                    <div class="orderinput">
+                        <input type="text" placeholder="12:00pm">
                     </div>
                 </div>
             </div>
             <div class="foodtitle">
                 <span class="entreespan">Entrée</span>
             </div>
-            <div class="orderentrecont">
+            <div class="orderentreecont">
                 <div class="orderentreebox">
                     <div class="orderentree">
                         <div class="orderentreepic"><img alt="Fried Rice Entree" src="http://www.freggie.ca/images/friedrice.png"></div>
@@ -110,8 +110,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="ordersidecont">
                 <div class="ordersidebox">
                     <div class="orderentree">
                         <div class="orderentreepic"><img alt="Chocolate Banana Bread" src="http://www.freggie.ca/images/sidebananabread.png"></div>
@@ -140,8 +138,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="ordersidecont">
                 <div class="ordersidebox">
                     <div class="orderentree">
                         <div class="orderentreepic"><img alt="Cranberry Trial Mix" src="http://www.freggie.ca/images/sidetrailmix.png"></div>
@@ -173,7 +169,7 @@
             </div>
             <div id="specialorder">
                 <div class="specialordertext">Special Orders:</div>
-                <textarea rows="5" columns="30" type="textarea" name="specialorders"></textarea>
+                <textarea rows="10" cols="30" type="textarea" name="specialorders"></textarea>
             </div>
             <button class="button sml" type="submit" name="submit">Order Food</button>
         </div>

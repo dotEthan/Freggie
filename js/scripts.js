@@ -3,14 +3,16 @@ let divPosition = menuBar.offset();
 let divTop = divPosition.top;
 
 // nav fixed on Scroll
-$(window).scroll(function() {
-    if ($(window).scrollTop() > divTop) {
-        menuBar[0].setAttribute("style","position: fixed;");
-    }
-    if ($(window).scrollTop() < divTop) {
-        menuBar[0].setAttribute("style","position: relative;");
-    }
-});
+if (document.documentElement.clientWidth < 600) {
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > divTop) {
+            menuBar[0].setAttribute("style","position: fixed;");
+        }
+        if ($(window).scrollTop() < divTop) {
+            menuBar[0].setAttribute("style","position: relative;");
+        }
+    });
+}
 
 // order tabs
 $('.ordertab').click(function() {
@@ -75,10 +77,44 @@ document.getElementById('facebook').addEventListener('mouseover', function fitb(
 
 // order tabs
 $('.faqquestion').click(function() {
-    console.log(this.id);
     switch (this.id) {
         case "1":
-            console.log(this.firstChild);
             $('#1a').toggle();
+            $('#1plus').toggleClass("rotate");
+    }
+    switch (this.id) {
+        case "2":
+            $('#2a').toggle();
+            $('#2plus').toggleClass("rotate");
+    }
+    switch (this.id) {
+        case "3":
+            $('#3a').toggle();
+            $('#3plus').toggleClass("rotate");
+    }
+    switch (this.id) {
+        case "4":
+            $('#4a').toggle();
+            $('#4plus').toggleClass("rotate");
+    }
+    switch (this.id) {
+        case "5":
+            $('#5a').toggle();
+            $('#5plus').toggleClass("rotate");
+    }
+    switch (this.id) {
+        case "6":
+            $('#6a').toggle();
+            $('#6plus').toggleClass("rotate");
+    }
+    switch (this.id) {
+        case "7":
+            $('#7a').toggle();
+            $('#7plus').toggleClass("rotate");
+    }
+    switch (this.id) {
+        case "8":
+            $('#8a').toggle();
+            $('#8plus').toggleClass("rotate");
     }
 });

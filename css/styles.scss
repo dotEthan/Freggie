@@ -2,6 +2,7 @@ $green: #528c0f;
 $test: 1px solid black;
 $navcolor: #3D3D3D;
 $red: rgb(288,0,0);
+$darkgrey: 1px solid #979797;
 
 
 
@@ -63,6 +64,8 @@ input {
 
 #logo {
     padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #menubar {
@@ -74,19 +77,14 @@ input {
     left: 0;
     background: rgb(255, 255, 255);
     background: rgba(255, 255, 255, 0.6);
-}
-
-.stuck {
-    display: fixed;
-    top: 0;
-    left: 0;
-    color: white;
+    align-items: center;
 }
 
 .menuitems{
     width: 16%;
     text-align: center;
     font-size: 0.8em;
+    line-height: 3em;
     padding: 8px;
     a {
         color: #3d3d3d;
@@ -150,7 +148,7 @@ input {
     }
 }
 
-.entreeitembox {
+.entreeitembox .sideitembox {
     width: 80%;
     display: block;
     margin-right: auto;
@@ -165,7 +163,9 @@ input {
 
 .entreetext {
     padding: 20px;
-    width: 80%;    
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;    
 }
 
 .entreetexttitle{
@@ -185,6 +185,7 @@ input {
     margin-left: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .entreeimg {
@@ -256,7 +257,6 @@ input {
 }
 
 .quote {
-    font-size: 0.8em;
     width: 90%;
     padding: 30px;
     line-height: 2em;
@@ -273,6 +273,7 @@ input {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    font-size: 0.8em;
 }
 
 // 1.3a - Order
@@ -325,7 +326,7 @@ input {
     text-align: center;
     font-size: 0.9em;
     color: rgb(87, 87, 87);
-    padding-top: 40px;
+    padding-top: 10%;
     padding-bottom: 10px;
 }
 
@@ -430,13 +431,28 @@ input {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px #3d3d3d;
+    color: #3d3d3d;
+}
+
+#firstcon {
+    margin-top: 30px;
 }
 
 .faqquestion {
-    border: $test;
+    border: $darkgrey;
     padding:15px;
     text-align: left;
     cursor: pointer;
+}
+
+#1plus {
+    transition: all 1s;
+}
+
+.rotate {
+    transform:rotate(45deg);
 }
 
 .faqquestiontext {
@@ -445,12 +461,11 @@ input {
 }
 
 .faqanswer {
-    border-bottom: $test;
-    border-right: $test;
-    border-left: $test;
+    border-bottom: $darkgrey;
+    border-right: $darkgrey;
+    border-left: $darkgrey;
     padding:15px;
     text-align: left;
-    transition: all 3s;
 }
 
 // 1.6a - Footer 
@@ -519,21 +534,26 @@ footer {
     color: $red;
 }
 
-// 1.5 - Contact Us
-
-.fb-page {
-    height: 300px;
-    width: 50%;
-}
-
 @media screen and (min-width: 600px) {
     /* For tablets: */
+
+.container { 
+    padding-top: 100px;
+}
 
 .nav {
     min-height: 90px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#logo {
+    width: 35%;
 }
 
 #menubar {
@@ -541,55 +561,102 @@ footer {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 50%;
+    width: 55%;
+    background: none;
+}
+
+.menuitems {
+    font-size: 1em;
 }
 
 .innercontain {
-    text-align: center;
-    background-color: white;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 50px;
 }
 
-.title {
-    font-size: 2.5em;
-    font-family: 'Bevan', cursive;
-    padding-top: 50px;
+.sideitemboxcontain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sideitembox {
+    width: 50%;
 }
 
-.entreespan {
-    background-color: white;
-    padding: 10px;
+.quote {
+    width: 30%;
+    padding: 40px;
 }
 
-.quickpicks {
-    font-size: 0.8em;
-    padding: 10px;
-    margin: 15px 0px 30px;
+.orderinfo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+.orderinfoeach {
+    width: 40%;
+}
+
+}
+
+@media screen and (min-width: 1000px) {
+    /* For tablets: */
 
 .entreeitembox {
-    display: flex;
-    justify-content: space-between;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
-    align-items: center;
-    margin-top: 40px;
+    clear: both;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.entreetext {
-    padding: 20px;
-    width: 70%;
+.right {
+    flex-direction: row-reverse;
 }
 
-.entreeicons {
-    margin: 15px 0;
-    min-height: 40px;
+.sideitembox {
+    width: 30%;
 }
 
-.entreehealthtext {
+.quote {
+    width: 20%;
+}
+
+.date {
+    padding-top: 8%;
+    font-size: 1.1em;
+}
+
+.reqinfo {
+ font-size: 0.7em;   
+}
+
+.orderentreebox {
+    width: 45%;
+}
+
+.orderentreecont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.orderentreetitle {
+    font-size: 1em;
+}
+
+.howmanytext {
     font-size: 0.8em;
+}
+
+.howmuch {
+    font-size: 1em;
+}
+
+.ordersidebox {
+    width: 33%;
 }
 }

@@ -32,7 +32,6 @@
                 <div class="menuitems"><a href="<?php home_url(); ?>">Menu</a></div>
                 <div class="menuitems"><a href="<?php home_url(); ?>order.php">Order</a></div>
                 <div class="menuitems"><a href="<?php home_url(); ?>faq.php">FAQ</a></div>
-                <div class="menuitems"><a href="#social">Contact us</a></div>
             </div>
         </div>
         <!--NAV END-->
