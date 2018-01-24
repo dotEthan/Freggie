@@ -1,5 +1,5 @@
 <?php
-    $title = "Freggie - Questions Answered!";
+    $title = "Freggie - Questions Answered!"; 
 ?>
 <?php require_once( 'header.php' ); ?>
 
@@ -21,7 +21,7 @@
     </div>
     <div class="faqcontain">
         <div id="4" class="faqquestion"><i id="4plus" class="fa fa-plus" style="font-size:1em;"></i><span class="faqquestiontext">What does Freggie mean anyway?</span></div>
-        <div id="4a" class="faqanswer hidden">We started this company to try and help University of Toronto students have more options for fresh vegetarian (and vegan) foods so they could stay healthy and focus on their studies. Freggie combines both our commitment to Freshly cooked foods and our love of vegetables into a great name and a great vision for the future!
+        <div id="4a" class="faqanswer hidden">We started this company to help University of Toronto students have more options for fresh vegetarian (and vegan) foods so they could stay healthy and focus on their studies. Freggie combines both our commitment to Freshly cooked foods and our love of vegetables into a great name and a great vision for the future!
                 FREsh + veGGIE = Freggie</div>
     </div>
     <div class="faqcontain">
