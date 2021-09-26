@@ -1,5 +1,5 @@
 # Freggie Delivery
-[http://www.freggie.ca](http://www.freggie.ca)
+[http://www.freggie.ca](http://www.ethanstrauss.com/freggie)
 
 I built Freggie to work as a food ordering portal for my healthy, food delivery start up. It worked very well and kept a nice record of all orders to ensure none were missed each day.
 
